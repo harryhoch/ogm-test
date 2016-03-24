@@ -1,16 +1,3 @@
-* basic code.
-** read document
-** why/where do I need service
-** work on relations?
-***other properties?
-**code to load...
-**** Collection<Person> people = session.loadAll(Person.class);
-** specific service  - get patient
-** code to retrieve
-
-
-* test a few things out
-
 
 DONE
 * get neo4j-ogm depdendency to work
@@ -27,3 +14,18 @@ DONE
 ** code to write
 ** remove impls???? - needed? - not strictly. why?
 ** maven to run.. mvn test -Pexec
+***other properties?
+** multiple labels  @NodeEntity(label="Department,Program")
+** relationship entities to add attributes 
+* basic code.
+** read document
+** work on relations?
+** why/where do I need service
+**code to load...
+**** Collection<Person> people = session.loadAll(Person.class);
+** specific service  - get patient
+** code to retrieve
+
+
+* test a few things out
+

@@ -6,15 +6,21 @@ import java.util.HashSet;
 import org.neo4j.ogm.annotation.NodeEntity;
 import org.neo4j.ogm.annotation.Relationship;
 
-@NodeEntity
+@NodeEntity(label="Department")
 public class Department extends Entity {
     private String name;
+    private String chair;
+
 
     @Relationship(type = "CURRICULUM")
     private Set<Subject> subjects;
 
     public Department() {
 	subjects = new HashSet<Subject>();
+    }
+
+    public Department(String d) {
+	setName(d);
     }
 
     public void setName(String n) {
@@ -32,5 +38,13 @@ public class Department extends Entity {
 
     public void addSubject(Subject s) {
 	subjects.add(s);
+    }
+
+    public void setChair(String c) {
+	chair = c;
+    }
+
+    public String getChair() {
+	return chair;
     }
 }

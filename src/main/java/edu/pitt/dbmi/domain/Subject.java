@@ -13,6 +13,10 @@ public class Subject extends Entity{
     public Subject() {
     }
 
+    public Subject(String name) {
+	setName(name);
+    }
+
     public Department getDepartment() {
 	return department;
     }
@@ -28,4 +32,6 @@ public class Subject extends Entity{
     public String getName() {
 	return name;
     }
+
+
 }
