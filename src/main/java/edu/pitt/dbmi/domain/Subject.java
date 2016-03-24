@@ -21,4 +21,11 @@ public class Subject extends Entity{
 	department = d;
     }
 
+    public void setName(String n)  {
+	name=n;
+    }
+
+    public String getName() {
+	return name;
+    }
 }

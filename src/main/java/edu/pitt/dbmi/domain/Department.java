@@ -17,6 +17,14 @@ public class Department extends Entity {
 	subjects = new HashSet<Subject>();
     }
 
+    public void setName(String n) {
+	name =n;
+    }
+
+    public String getName() {
+	return name;
+    }
+
 
     public Set<Subject> getSubjects() {
 	return subjects;

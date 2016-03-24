@@ -1,5 +1,10 @@
 * basic code.
-** code to write
+** read document
+** why/where do I need service
+** work on relations?
+***other properties?
+**code to load...
+**** Collection<Person> people = session.loadAll(Person.class);
 ** specific service  - get patient
 ** code to retrieve
 
@@ -17,3 +22,8 @@ DONE
 ** what is school.domain about?
 *** set specific value
 ** compile
+*** Department service and service impl
+*** Subject service and impl
+** code to write
+** remove impls???? - needed? - not strictly. why?
+** maven to run.. mvn test -Pexec
